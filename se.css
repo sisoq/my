@@ -1,0 +1,17 @@
+.header {
+    background-color: #8B4513;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .header h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
+  

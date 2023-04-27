@@ -1,0 +1,55 @@
+  
+  .logo-button {
+    background-image: url('Sans\ titre12.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .footer {
+    text-align: center;
+    background-color: #552a2a;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #eeeaea;
+    border-left: 1px solid #8d23ad;
+    display: none;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    padding: 20px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 90%;
+    padding: 10px;
+    background-color: rgb(170, 63, 63);
+    color: #25c49c;
+    border: none;
+    cursor: pointer;
+  }
+  
+   
+    
+    .text {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+  

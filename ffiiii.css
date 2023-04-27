@@ -1,0 +1,26 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .row {
+    display: flex;
+    margin: -10px;
+  }
+  
+  .col {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  img {
+    width: 200px;
+    height: 180px;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
