@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <title>إدخال معلومات المنتج</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>إدخال معلومات المنتج:</h1>
+
+        <form id="productForm" enctype="multipart/form-data">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="company">اسم الشركة:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="price">السعر:</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="image">صورة المنتج:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <input type="submit" value="نشر">
+        </form>
+    </div>
+
+    <script>
+        const productForm = document.getElementById('productForm');
+        productForm.addEventListener('submit', submitForm);
+
+        function submitForm(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const company = document.getElementById('company').value;
+            const price = document.getElementById('price').value;
+            const image = document.getElementById('image').files[0];
+
+            const formData = new FormData();
+            formData.append('name', name);
+            formData.append('company', company);
+            formData.append('price', price);
+            formData.append('image', image);
+
+            // هنا يمكنك إرسال بيانات النموذج إلى الخادم لمعالجتها
+            // قد يتطلب ذلك استخدام لغة برمجة مثل PHP أو نظام إطار عمل
+
+            // بعد معالجة البيانات، يمكنك توجيه المستخدم إلى صفحة عرض المنتج
+            window.location.href = `product.html?name=${name}&company=${company}&price=${price}`;
+        }
+    </script>
+</body>
+</html>
