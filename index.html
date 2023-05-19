@@ -1,101 +1,14 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <title>home</title>
+<head>
+    <title>الصفحة الرئيسية</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="desceipin" content="Shop, Offers, Cooking recipes, Wide range, Explore, New ways, Fresh ingredients, New ideas, Diversify, Shopping experience">
-    <style>
-        .popup {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 25%;
-            height: 100%;
-            background-color: #f5f5f5;
-            border-left: 1px solid #ccc;
-            display: none;
-            z-index: 9999;
-        }
-        .popup-content {
-            padding: 20px;
-        }
-        .close-btn {
-            position: absolute;
-            top: 0;
-            right: 100%;
-            padding: 10px;
-            background-color: rgb(170, 63, 63);
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-   
-      header {
-        text-align: center;
-      }
-    </style>
-    </style>
-</head>
-<body>
-  <header>
-      <style>
-          .button {
-            position: fixed; /* Make the element fixed position */
-            top: 0; /* Position it at the top of the page */
-            left: 0; /* Position it at the left of the page */
-            width: 100%; /* Make the element full width */
-            background-color: brown; /* Add a background color */
-            color: rgb(26, 252, 6); /* Set the text color to white */
-            padding: 10px 20px; /* Add some padding */
-            text-align: center; /* Center the text */
-            text-decoration: none; /* Remove underline */
-            display: block; /* Make the element a block level element */
-            border: none; /* Remove the border */
-          }
-        </style>
-      </head>
-      <body>
-        <a href="index.html" class="button">Mico Store</a>
-        <!-- Rest of the webpage content goes here -->
-     
-    
-     
-    
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
-  <button onclick="document.getElementById('popup').style.display='block'">Open Popup</button>
-  
-
-  <div id="popup" class="popup">
-    <button class="close-btn" onclick="document.getElementById('popup').style.display='none'">x</button>
-    <div class="popup-content">
-      <ul>
-        <li><a href="index4.html">الخدمات</a></li>
-        <h1>--</h1>
-        <li><a href="https://sisoq.github.io/shop-vini/">المنتجات</a></li>
-        <h1>--</h1>
-        <li><a href="index5.html">اتصل بنا</a></li>
-        <h1>--</h1>
-        <li><a href="index6.html">test</a></li>
-        <h1>--</h1>
-        <li><a href="https://sisoq.github.io/tajre/index21.html">teerest</a></li>
-        <h1>--</h1>
-       </ul>
-    </div>
-  </div>
-</header>
-</div>
-<div class="text">
-    <h1>هذا المكان مخصص للكتابة</h1>
-    <p>يمكنك كتابة النصوص والمحتوى الذي تريده في هذا المكان </p>
-      <p>  وستظل هذه المساحة خارج المربعات الأربعة  </p>
-</div>
-<div class="footer">
-<p>جميع الحقوق محفوظة © 2023</p>
- </div>
-  <head>
-        <link rel="stylesheet" href="nina.css">
+    
+          <link rel="stylesheet" href=".css">
+          <link rel="stylesheet" href="nina.css">
           <link rel="stylesheet" href="cssq.css">
           <link rel="stylesheet" href="cssq1.css">
           <link rel="stylesheet" href="ffiiii.css">    
@@ -103,6 +16,126 @@
           <link rel="stylesheet" href="safd.css">
           <link rel="stylesheet" href="soso.php">
           <link rel="stylesheet" href="didi.css">
-     </head>
-   </head>
- </html>
+        
+              <style>
+                  .popup {
+                      position: fixed;
+                      top: 0;
+                      right: 0;
+                      width: 25%;
+                      height: 100%;
+                      background-color: #ffffff;
+                      border-left: 1px solid #ffffff;
+                      display: none;
+                      z-index: 9999;
+                  }
+                  .popup-content {
+                      padding: 20px;
+                  }
+                  .close-btn {
+                      position: absolute;
+                      top: 0;
+                      right: 100%;
+                      padding: 10px;
+                      background-color: rgb(170, 63, 63);
+                      color: #fff;
+                      border: none;
+                      cursor: pointer;
+                  }
+                  header {
+                      text-align: center;
+                  }
+                  .button {
+                      position: fixed;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      background-color: brown;
+                      color: rgb(26, 252, 6);
+                      padding: 10px 20px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: block;
+                      border: none;
+                  }
+                  .text {
+                      text-align: center;
+                      margin-top: 100px;
+                  }
+                  .footer {
+                      text-align: center;
+                      position: fixed;
+                      bottom: 0;
+                      width: 100%;
+                      padding: 10px 0;
+                      background-color: brown;
+                      border-top: 1px solid rgb(141, 109, 109);
+                  }
+                  .social-icons {
+                      display: flex;
+                      justify-content: center;
+                      margin-top: 20px;
+                  }
+                  .social-icons a {
+                      margin: 0 10px;
+                  }
+                  .social-icons img {
+            width: 25px; /* تعديل العرض */
+            height: 25px; /* تعديل الارتفاع */
+        }
+              </style>
+          </head>
+          <body>
+              <header>
+                  <a href="index.html" class="button">Mico Store</a>
+              </header>
+          
+              <button onclick="togglePopup()">Open Popup</button>
+          
+              <div id="popup" class="popup">
+                  <button class="close-btn" onclick="togglePopup()">x</button>
+                  <div class="popup-content">
+                      <ul>
+                          <li><a href="index4.html">الخدمات</a></li>
+                          <h1>--</h1>
+                          <li><a href="https://sisoq.github.io/shop-vini/">المنتجات</a></li>
+                          <h1>--</h1>
+                          <li><a href="index5.html">اتصل بنا</a></li>
+                          <h1>--</h1>
+                          <li><a href="index6.html">tyui</a></li>
+                          <h1>--</h1>
+                          <li><a href="https://sisoq.github.io/tajre/index21.html">test</a></li>
+                          <h1>--</h1>
+                      </ul>
+                      <div class="social-icons">
+                          <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+                          <a href="https://www.twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
+                          <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
+                          <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="text">
+                  <h1>هذا المكان مخصص للكتابة</h1>
+                  <p>يمكنك كتابة النصوص والمحتوى الذي تريده في هذا المكان</p>
+                  <p>وستظل هذه المساحة خارج المربعات الأربعة</p>
+              </div>
+          
+              <div class="footer">
+                  <p>جميع الحقوق محفوظة © 2023</p>
+              </div>
+          
+              <script>
+                  function togglePopup() {
+                      var popup = document.getElementById("popup");
+                      if (popup.style.display === "block") {
+                          popup.style.display = "none";
+                      } else {
+                          popup.style.display = "block";
+                      }
+                  }
+              </script>
+          </body>
+          </html>
+          
